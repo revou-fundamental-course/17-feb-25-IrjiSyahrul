@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,13 +14,13 @@
 
     <header class="main-header">
         <!-- Logo Company -->
-         <div class="logo-company"></div>
+        <div class="logo-company"></div>
 
-         <nav >
+        <nav>
             <a href="#" class="no-border-radius-right">Home</a>
             <a href="#our-package-section" class="no-border-radius">Our Packages</a>
-            <a href="#" class="no-border-radius-left">Contact</a>
-         </nav>
+            <a href="#call-us-section" class="no-border-radius-left">Contact</a>
+        </nav>
     </header>
 
     <!-- Main Content -->
@@ -32,21 +33,57 @@
 
         <section class="main-content">
             <!-- Banner AutoSlide -->
-            <aside class="main-container">
-                <p>Banner AutoSlide</p>
+            <aside class="main-container1">
+                <div class="main-banner">
+                    <div class="banner-img1 active"></div>
+                    <div class="banner-img2"></div>
+                    <div class="banner-img3"></div>
+                </div>
+        </div>
+
             </aside>
 
             <!-- Form Contact Us -->
-            <aside class="main-container">
-                <p>Form banner Contact Us</p>
+            <aside class="main-container2">
+                <header>
+                    <h2>Contact Us</h2>
+                    <p>Sales akan menghubungi anda dalam 1x24 jam setelah data kamu diterima</p>
+                </header>
+
+                <form>
+                    <div>
+                        <label for="name-input">Name :</label> <br>
+                        <input type="text" id="name-input" required>
+                    </div><br>
+
+                    <div>
+                        <label for="email-input">Email Address:</label><br>
+                        <input type="text" id="email-input" required>
+                    </div><br>
+
+                    <div>
+                        <label for="option-input">What are you interested in?</label><br>
+                        <select name="interest">
+                            <option value="travel">Travel Package</option>
+                            <option value="consultation">Consultation</option>
+                        </select>
+                    </div><br>
+
+                    <div>
+                        <button type="button" onclick="validateform();"> Submit </button>
+                    </div>
+                </form>
             </aside>
 
+
+
         </section>
-       
+
         <!-- Our Package Section -->
         <section>
-           <section id="our-package-section">
+            <section id="our-package-section">
                 <header>Our Package</header>
+
 
                 <!-- Contect our packages -->
                 <article class="our-package-content">
@@ -54,31 +91,34 @@
                         ini content
                     </p>
                 </article>
-           </section>
+            </section>
         </section>
 
         <section>
             <section id="call-us-section">
-                 <header>Call Us</header>
- 
-                 <!-- Contect our packages -->
-                 <article class="call-us-content">
-                     <p>
-                         ini content
-                     </p>
-                 </article>
+                <header>Call Us</header>
+
+                <!-- Contect our packages -->
+                <article class="call-us-content">
+                    <p>
+                        ini content
+                    </p>
+                </article>
             </section>
-         </section>
+        </section>
 
 
     </main>
 
     <!-- Footer -->
-     <footer class="Footer">
+    <footer class="Footer">
         <p>
             Irji Syahrul
         </p>
-     </footer>
+    </footer>
+
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
